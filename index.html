@@ -1,114 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CIVIKA Desarrollo y Construcción</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Poppins',sans-serif;color:#111;background:#fff}
-    header{background:linear-gradient(90deg,#0f172a,#1e3a8a);color:white;padding:40px;text-align:center}
-    header img{max-width:180px;margin-bottom:15px}
-    nav{background:#0f172a;padding:12px;text-align:center;position:sticky;top:0;z-index:10}
-    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:500}
-    section{padding:60px 20px;max-width:1100px;margin:auto}
-    h2{margin-bottom:20px;color:#0f172a}
-    .hero{background:#f1f5f9;text-align:center;padding:80px 20px}
-    .hero h1{font-size:2.5em;margin-bottom:15px}
-    .btn{display:inline-block;margin-top:20px;padding:12px 25px;background:#1e3a8a;color:white;border-radius:8px;text-decoration:none}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
-    .card{background:white;padding:25px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.08)}
-    .dark{background:#0f172a;color:white}
-    .dark h2{color:white}
-    .dark .card{background:#1f2937;color:white}
-    .dark .card p, .dark .card h3{color:white}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:15px}
-    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:10px}
-    footer{background:#0f172a;color:white;text-align:center;padding:25px}
-    .whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px 18px;border-radius:50px;text-decoration:none;font-weight:bold}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CIVIKA Desarrollo y Construcción</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;color:#111;line-height:1.6}
+
+/* HERO */
+header{
+  background:linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.95)),
+  url('obra1.png') center/cover no-repeat;
+  color:white;
+  padding:100px 20px;
+  text-align:center;
+}
+header img{max-width:150px;margin-bottom:15px}
+header h1{font-size:2.5em}
+
+/* NAV */
+nav{
+  background:#0f172a;
+  padding:12px;
+  text-align:center;
+  position:sticky;
+  top:0;
+}
+nav a{
+  color:#fff;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+/* SECCIONES */
+section{
+  padding:60px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+h2{margin-bottom:20px}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GALERIA */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:15px;
+}
+.gallery img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* BOTONES */
+.whatsapp, .instagram{
+  position:fixed;
+  right:20px;
+  padding:12px 16px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+.whatsapp{bottom:20px;background:#25D366}
+.instagram{bottom:80px;background:#E1306C}
+
+/* FOOTER */
+footer{
+  background:#0f172a;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png" alt="CIVIKA Logo">
+  <img src="logo.png">
   <h1>CIVIKA Desarrollo y Construcción</h1>
   <p>Ingeniería Civil · Desarrollo Habitacional · Construcción</p>
 </header>
 
 <nav>
-  <a href="#inicio">Inicio</a>
   <a href="#nosotros">Nosotros</a>
   <a href="#servicios">Servicios</a>
   <a href="#galeria">Proyectos</a>
-  <a href="#ventajas">Ventajas</a>
+  <a href="proyectos.html">Proyectos creados</a>
   <a href="#contacto">Contacto</a>
+  <a href="https://www.instagram.com/civika_viviendas?utm_source=qr&igsh=ZXIxYmUycmRvdHdp" target="_blank">Instagram</a>
 </nav>
 
-<section class="hero" id="inicio">
-  <h1>Construimos proyectos que generan valor</h1>
-  <p>Desarrollo habitacional con control técnico, calidad y visión urbana en León, Guanajuato.</p>
-  <a href="https://wa.me/524731172748" class="btn">Solicitar cotización</a>
-</section>
-
 <section id="nosotros">
-  <h2>Misión</h2>
-  <p>Desarrollar proyectos habitacionales y urbanos mediante soluciones integrales de ingeniería, garantizando calidad, eficiencia constructiva y precisión técnica.</p>
-
-  <h2>Visión</h2>
-  <p>Consolidarse como una constructora especializada en vivienda residencial y media, destacando en diseño, ejecución y desarrollo de proyectos propios.</p>
-
-  <h2>Valores</h2>
-  <p>Calidad, responsabilidad, precisión técnica, compromiso social y cumplimiento en cada proyecto.</p>
-
-  <h2>¿Quiénes somos?</h2>
-  <p>CIVIKA es una empresa mexicana enfocada en el desarrollo y construcción de proyectos habitacionales, integrando ingeniería civil, planeación urbana y ejecución constructiva bajo un modelo multidisciplinario propio.</p>
+  <h2>Sobre CIVIKA</h2>
+  <p>Empresa enfocada en desarrollo habitacional, ingeniería civil y ejecución constructiva.</p>
 </section>
 
 <section id="servicios">
   <h2>Servicios</h2>
   <div class="grid">
-    <div class="card"><h3>Diseño y Construcción</h3><p>Desarrollo integral de proyectos habitacionales.</p></div>
-    <div class="card"><h3>Obra por Contrato</h3><p>Ejecución con control técnico y cumplimiento de tiempos.</p></div>
-    <div class="card"><h3>Remodelaciones</h3><p>Ampliaciones y mejoras residenciales.</p></div>
-    <div class="card"><h3>Topografía y Supervisión</h3><p>Control técnico y verificación estructural.</p></div>
+    <div class="card"><h3>Diseño y Construcción</h3></div>
+    <div class="card"><h3>Obra por contrato</h3></div>
+    <div class="card"><h3>Remodelaciones</h3></div>
+    <div class="card"><h3>Topografía</h3></div>
   </div>
 </section>
 
 <section id="galeria">
   <h2>Proyectos</h2>
   <div class="gallery">
-    <img src="obra1.jpg" alt="Proyecto 1">
-    <img src="obra2.jpg" alt="Proyecto 2">
-    <img src="obra3.jpg" alt="Proyecto 3">
-  </div>
-</section>
-
-<section id="ventajas" class="dark">
-  <h2>¿Por qué elegir CIVIKA?</h2>
-  <div class="grid">
-    <div class="card"><h3>Control técnico</h3><p>Supervisión estructural en cada etapa del proyecto.</p></div>
-    <div class="card"><h3>Planeación financiera</h3><p>Optimización de costos por proyecto.</p></div>
-    <div class="card"><h3>Cumplimiento de tiempos</h3><p>Uso de cronogramas y control de obra.</p></div>
-    <div class="card"><h3>Servicios integrales</h3><p>Topografía, supervisión y ejecución en un mismo equipo.</p></div>
+    <img src="obra1.png">
+    <img src="obra2.png">
+    <img src="obra3.png">
   </div>
 </section>
 
 <section id="contacto">
   <h2>Contacto</h2>
-  <p><strong>Ubicación:</strong> León, Guanajuato</p>
-  <p><strong>Tel:</strong> 473 117 2748</p>
-  <p><strong>RFC:</strong> CIV260305AB3</p>
+  <p>León, Guanajuato</p>
+  <p>Tel: 473 117 2748</p>
 </section>
 
 <a class="whatsapp" href="https://wa.me/524731172748">WhatsApp</a>
+<a class="instagram" href="https://www.instagram.com/civika_viviendas?utm_source=qr&igsh=ZXIxYmUycmRvdHdp" target="_blank">IG</a>
 
 <footer>
-  <p>© 2026 CIVIKA Desarrollo y Construcción S.A. de C.V.</p>
+  <p>© CIVIKA Desarrollo y Construcción S.A. de C.V.</p>
 </footer>
 
 </body>
 </html>
-
 
